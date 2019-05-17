@@ -1,5 +1,5 @@
 #include "MainWindow.h"
-
+#include <iostream>
 #include <QHBoxLayout>
 #include <QMenuBar>
 #include <QMessageBox>
@@ -171,6 +171,7 @@ void MainWindow::addSelectedResultsToWatchList(Common::MemType type, size_t leng
     MemWatchEntry* newEntry =
         new MemWatchEntry(tr("No label"), address, type, base, isUnsigned, length);
     m_watcher->addWatchEntry(newEntry);
+    std::cout << newEntry->getMemory() << std::endl;
   }
 }
 

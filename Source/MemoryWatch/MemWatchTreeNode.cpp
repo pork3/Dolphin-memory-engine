@@ -1,7 +1,7 @@
 #include "MemWatchTreeNode.h"
 
 #include <QJsonArray>
-
+#include <iostream>
 #include <sstream>
 
 #include "../GUI/GUICommon.h"
@@ -67,6 +67,7 @@ void MemWatchTreeNode::setGroupName(const QString& groupName)
 
 MemWatchEntry* MemWatchTreeNode::getEntry() const
 {
+   // std::cout << m_entry->getMemory() << std::endl;
   return m_entry;
 }
 
@@ -174,6 +175,7 @@ void MemWatchTreeNode::readFromJson(const QJsonObject& json, MemWatchTreeNode* p
         int offset = 0;
         ssOffset >> std::hex >> std::uppercase >> offset;
         m_entry->addOffset(offset);
+        //std::cout << m_entry->getMemory() << "TEST" << std::endl;
       }
     }
     else
@@ -248,6 +250,7 @@ QString MemWatchTreeNode::writeAsCSV() const
       QString theCsvLine = i->writeAsCSV();
       rootCsv.append(theCsvLine);
     }
+
     return rootCsv;
   }
   else

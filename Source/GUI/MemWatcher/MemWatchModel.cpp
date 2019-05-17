@@ -1,5 +1,5 @@
 #include "MemWatchModel.h"
-
+#include <iostream>
 #include <QDataStream>
 #include <QMimeData>
 #include <cstring>
@@ -206,6 +206,13 @@ QVariant MemWatchModel::data(const QModelIndex& index, int role) const
       }
       case WATCH_COL_VALUE:
       {
+
+          /*FOUND IT */
+
+          std::string name = entry->getLabel().toStdString();
+          std::string value = entry->getStringFromMemory();
+            std::cout << name << " " << value << std::endl;
+          //printf("%s: %s\n", name.,value);
         return QString::fromStdString(entry->getStringFromMemory());
       }
       }

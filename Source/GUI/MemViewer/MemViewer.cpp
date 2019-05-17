@@ -1,5 +1,5 @@
 #include "MemViewer.h"
-
+#include <iostream>
 #include <algorithm>
 #include <cmath>
 #include <cstring>
@@ -713,7 +713,7 @@ void MemViewer::keyPressEvent(QKeyEvent* event)
       QApplication::beep();
       return;
     }
-
+    std::cout << value << std::endl;
     success = writeCharacterToSelectedMemory(value);
     m_carretBetweenHex = !m_carretBetweenHex;
   }

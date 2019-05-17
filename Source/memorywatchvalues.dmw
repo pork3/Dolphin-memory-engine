@@ -1,0 +1,83 @@
+{
+    "watchList": [
+        {
+            "address": "80453088",
+            "baseIndex": 0,
+            "label": "P1type",
+            "typeIndex": 2,
+            "unsigned": false
+        },
+        {
+            "address": "804530C0",
+            "baseIndex": 0,
+            "label": "P1Dir",
+            "typeIndex": 3,
+            "unsigned": false
+        },
+        {
+            "address": "804530E0",
+            "baseIndex": 0,
+            "label": "P1Health",
+            "typeIndex": 1,
+            "unsigned": false
+        },
+        {
+            "address": "80453130",
+            "baseIndex": 0,
+            "label": "P1Xpos",
+            "pointerOffsets": [
+                "2C",
+                "B0"
+            ],
+            "typeIndex": 3,
+            "unsigned": false
+        },
+        {
+            "address": "80453130",
+            "baseIndex": 0,
+            "label": "P1ypos",
+            "pointerOffsets": [
+                "2C",
+                "B4"
+            ],
+            "typeIndex": 3,
+            "unsigned": false
+        },
+        {
+            "address": "80453F50",
+            "baseIndex": 0,
+            "label": "P2Dir",
+            "typeIndex": 3,
+            "unsigned": false
+        },
+        {
+            "address": "80453F70",
+            "baseIndex": 0,
+            "label": "P2Health",
+            "typeIndex": 1,
+            "unsigned": false
+        },
+        {
+            "address": "80453FC0",
+            "baseIndex": 0,
+            "label": "P2Xpos",
+            "pointerOffsets": [
+                "2C",
+                "B0"
+            ],
+            "typeIndex": 3,
+            "unsigned": false
+        },
+        {
+            "address": "80453FC0",
+            "baseIndex": 0,
+            "label": "P2YPos",
+            "pointerOffsets": [
+                "2C",
+                "B4"
+            ],
+            "typeIndex": 3,
+            "unsigned": false
+        }
+    ]
+}

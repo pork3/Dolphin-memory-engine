@@ -1,5 +1,5 @@
 #include "MemWatchWidget.h"
-
+#include <iostream>
 #include <QAction>
 #include <QApplication>
 #include <QByteArray>
@@ -128,6 +128,7 @@ void MemWatchWidget::onMemWatchContextMenuRequested(const QPoint& pos)
   if (index != QModelIndex())
   {
     node = m_watchModel->getTreeNodeFromIndex(index);
+
     if (!node->isGroup())
     {
       MemWatchEntry* entry = m_watchModel->getEntryFromIndex(index);
@@ -190,7 +191,7 @@ void MemWatchWidget::onMemWatchContextMenuRequested(const QPoint& pos)
           entry->setBase(Common::MemBase::base_binary);
           m_hasUnsavedChanges = true;
         });
-
+        std::cout << "TESJGH\n";
         contextMenu->addAction(viewDec);
         contextMenu->addAction(viewHex);
         contextMenu->addAction(viewOct);
@@ -337,6 +338,8 @@ void MemWatchWidget::onWatchDoubleClicked(const QModelIndex& index)
     if (index.column() == MemWatchModel::WATCH_COL_TYPE && !node->isGroup())
     {
       MemWatchEntry* entry = node->getEntry();
+
+      std::cout << entry->getMemory() << std::endl;
       int typeIndex = static_cast<int>(entry->getType());
       DlgChangeType* dlg = new DlgChangeType(this, typeIndex, entry->getLength());
       if (dlg->exec() == QDialog::Accepted)

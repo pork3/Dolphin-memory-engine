@@ -1,5 +1,5 @@
 #include "MemWatchEntry.h"
-
+#include <iostream>
 #include <bitset>
 #include <cstring>
 #include <iomanip>
@@ -18,6 +18,7 @@ MemWatchEntry::MemWatchEntry(const QString label, const u32 consoleAddress,
       m_base(base), m_boundToPointer(isBoundToPointer), m_length(length)
 {
   m_memory = new char[getSizeForType(m_type, m_length)];
+  std::cout << m_memory <<std::endl;
 }
 
 MemWatchEntry::MemWatchEntry()
@@ -37,7 +38,9 @@ MemWatchEntry::MemWatchEntry(MemWatchEntry* entry)
       m_length(entry->m_length), m_isValidPointer(entry->m_isValidPointer)
 {
   m_memory = new char[getSizeForType(entry->getType(), entry->getLength())];
+
   std::memcpy(m_memory, entry->getMemory(), getSizeForType(entry->getType(), entry->getLength()));
+  std::cout << entry->getMemory()<< std::endl;
 }
 
 MemWatchEntry::~MemWatchEntry()
@@ -48,16 +51,20 @@ MemWatchEntry::~MemWatchEntry()
 
 QString MemWatchEntry::getLabel() const
 {
+    //std::cout << this->m_memory << std::endl;
+    // std::cout << m_label.toStdString() << std::endl;
   return m_label;
 }
 
 size_t MemWatchEntry::getLength() const
 {
+    //std::cout << this->m_memory << std::endl;
   return m_length;
 }
 
 Common::MemType MemWatchEntry::getType() const
 {
+    //std::cout << this->m_memory << std::endl;
   return m_type;
 }
 
@@ -98,6 +105,7 @@ size_t MemWatchEntry::getPointerLevel() const
 
 char* MemWatchEntry::getMemory() const
 {
+    std::cout << this->m_memory << std::endl;
   return m_memory;
 }
 
@@ -229,7 +237,9 @@ std::string MemWatchEntry::getAddressStringForPointerLevel(const int level)
 
 Common::MemOperationReturnCode MemWatchEntry::readMemoryFromRAM()
 {
-  u32 realConsoleAddress = m_consoleAddress;
+
+
+    u32 realConsoleAddress = m_consoleAddress;
   if (m_boundToPointer)
   {
     char realConsoleAddressBuffer[sizeof(u32)] = {0};
@@ -255,12 +265,16 @@ Common::MemOperationReturnCode MemWatchEntry::readMemoryFromRAM()
       }
     }
     // Resolve sucessful
+
     m_isValidPointer = true;
   }
   if (DolphinComm::DolphinAccessor::readFromRAM(Common::dolphinAddrToOffset(realConsoleAddress),
                                                 m_memory, getSizeForType(m_type, m_length),
-                                                shouldBeBSwappedForType(m_type)))
-    return Common::MemOperationReturnCode::OK;
+                                                shouldBeBSwappedForType(m_type))) {
+      std::cout << this->m_memory << std::endl;
+      return Common::MemOperationReturnCode::OK;
+  }
+    std::cout << this->m_memory << std::endl;
   return Common::MemOperationReturnCode::operationFailed;
 }
 
@@ -313,6 +327,7 @@ Common::MemOperationReturnCode MemWatchEntry::writeMemoryFromString(const std::s
 {
   Common::MemOperationReturnCode writeReturn = Common::MemOperationReturnCode::OK;
   size_t sizeToWrite = 0;
+   // std::cout << this->m_memory << std::endl;
   char* buffer =
       Common::formatStringToMemory(writeReturn, sizeToWrite, inputString, m_base, m_type, m_length);
   if (writeReturn != Common::MemOperationReturnCode::OK)

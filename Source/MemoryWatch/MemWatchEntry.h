@@ -41,7 +41,6 @@ public:
   void setPointerOffset(const int pointerOffset, const int index);
   void addOffset(const int offset);
   void removeOffset();
-
   Common::MemOperationReturnCode freeze();
 
   u32 getAddressForPointerLevel(const int level);

@@ -1,5 +1,5 @@
 #include "MemWatchDelegate.h"
-
+#include <iostream>
 #include <QLineEdit>
 
 #include "../../MemoryWatch/MemWatchTreeNode.h"
@@ -15,6 +15,7 @@ QWidget* MemWatchDelegate::createEditor(QWidget* parent, const QStyleOptionViewI
   if (index.column() == MemWatchModel::WATCH_COL_VALUE && !node->isGroup())
     node->setValueEditing(true);
   GUICommon::g_valueEditing = true;
+  std::cout << editor->text().toStdString();
   return editor;
 }
 
@@ -24,6 +25,7 @@ void MemWatchDelegate::setModelData(QWidget* editor, QAbstractItemModel* model,
   QLineEdit* lineEditor = static_cast<QLineEdit*>(editor);
   if (!lineEditor->text().isEmpty())
     QStyledItemDelegate::setModelData(editor, model, index);
+  std::cout << "FJFJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJ\n";
 }
 
 void MemWatchDelegate::destroyEditor(QWidget* editor, const QModelIndex& index) const

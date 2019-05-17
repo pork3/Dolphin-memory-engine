@@ -30,6 +30,7 @@ set(SRCS ${DolphinProcessSrc}
          GUI/MemViewer/MemViewer.cpp
          GUI/MemViewer/MemViewerWidget.cpp
          GUI/MainWindow.cpp
+		GUI/MemWatcher/MemwatchConsole.cpp
          main.cpp)
 
 set(CMAKE_INCLUE_CURRENT_DIR ON)
@@ -41,7 +42,7 @@ find_package(Qt5Gui REQUIRED)
 set(CMAKE_AUTOMOC ON)
 
 IF(WIN32)
-SET(GUI_TYPE WIN32)
+SET(GUI_TYPE WIN32 GUI/MemWatcher/MemWatchConsole.cpp GUI/MemWatcher/MemWatchConsole.h GUI/MemWatcher/MemwatchConsole.cpp GUI/MemWatcher/MemwatchConsole.h)
 ENDIF(WIN32)
 
 add_executable(Dolphin-memory-engine ${GUI_TYPE} ${SRCS})
