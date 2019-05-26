@@ -92,6 +92,7 @@ CMakeFiles/Dolphin-memory-engine.dir/Dolphin-memory-engine_autogen/mocs_compilat
  /home/zach/Desktop/CIS472/final/Dolphin-memory-engine/Source/GUI/MemWatcher/MemWatchDelegate.h
  /home/zach/Desktop/CIS472/final/Dolphin-memory-engine/Source/GUI/MemWatcher/MemWatchModel.h
  /home/zach/Desktop/CIS472/final/Dolphin-memory-engine/Source/GUI/MemWatcher/MemWatchWidget.h
+ /home/zach/Desktop/CIS472/final/Dolphin-memory-engine/Source/GUI/MemWatcher/MemwatchConsole.h
  /home/zach/Desktop/CIS472/final/Dolphin-memory-engine/Source/MemoryScanner/MemoryScanner.h
  /home/zach/Desktop/CIS472/final/Dolphin-memory-engine/Source/MemoryWatch/MemWatchEntry.h
  /home/zach/Desktop/CIS472/final/Dolphin-memory-engine/Source/MemoryWatch/MemWatchTreeNode.h
@@ -371,6 +372,7 @@ CMakeFiles/Dolphin-memory-engine.dir/GUI/MainWindow.cpp.o
  /home/zach/Desktop/CIS472/final/Dolphin-memory-engine/Source/GUI/MemWatcher/MemWatchDelegate.h
  /home/zach/Desktop/CIS472/final/Dolphin-memory-engine/Source/GUI/MemWatcher/MemWatchModel.h
  /home/zach/Desktop/CIS472/final/Dolphin-memory-engine/Source/GUI/MemWatcher/MemWatchWidget.h
+ /home/zach/Desktop/CIS472/final/Dolphin-memory-engine/Source/GUI/MemWatcher/MemwatchConsole.h
  /home/zach/Desktop/CIS472/final/Dolphin-memory-engine/Source/GUI/Settings/DlgSettings.h
  /home/zach/Desktop/CIS472/final/Dolphin-memory-engine/Source/GUI/Settings/SConfig.h
  /home/zach/Desktop/CIS472/final/Dolphin-memory-engine/Source/MemoryScanner/MemoryScanner.h
@@ -1592,6 +1594,7 @@ CMakeFiles/Dolphin-memory-engine.dir/GUI/MemWatcher/MemWatchDelegate.cpp.o
  /home/zach/Desktop/CIS472/final/Dolphin-memory-engine/Source/GUI/MemWatcher/MemWatchDelegate.cpp
  /home/zach/Desktop/CIS472/final/Dolphin-memory-engine/Source/GUI/MemWatcher/MemWatchDelegate.h
  /home/zach/Desktop/CIS472/final/Dolphin-memory-engine/Source/GUI/MemWatcher/MemWatchModel.h
+ /home/zach/Desktop/CIS472/final/Dolphin-memory-engine/Source/GUI/MemWatcher/MemwatchConsole.h
  /home/zach/Desktop/CIS472/final/Dolphin-memory-engine/Source/MemoryWatch/MemWatchEntry.h
  /home/zach/Desktop/CIS472/final/Dolphin-memory-engine/Source/MemoryWatch/MemWatchTreeNode.h
  /usr/include/qt/QtCore/QAbstractItemModel
@@ -1733,6 +1736,7 @@ CMakeFiles/Dolphin-memory-engine.dir/GUI/MemWatcher/MemWatchModel.cpp.o
  /home/zach/Desktop/CIS472/final/Dolphin-memory-engine/Source/GUI/GUICommon.h
  /home/zach/Desktop/CIS472/final/Dolphin-memory-engine/Source/GUI/MemWatcher/MemWatchModel.cpp
  /home/zach/Desktop/CIS472/final/Dolphin-memory-engine/Source/GUI/MemWatcher/MemWatchModel.h
+ /home/zach/Desktop/CIS472/final/Dolphin-memory-engine/Source/GUI/MemWatcher/MemwatchConsole.h
  /home/zach/Desktop/CIS472/final/Dolphin-memory-engine/Source/MemoryWatch/MemWatchEntry.h
  /home/zach/Desktop/CIS472/final/Dolphin-memory-engine/Source/MemoryWatch/MemWatchTreeNode.h
  /usr/include/qt/QtCore/QAbstractItemModel
@@ -1826,6 +1830,7 @@ CMakeFiles/Dolphin-memory-engine.dir/GUI/MemWatcher/MemWatchWidget.cpp.o
  /home/zach/Desktop/CIS472/final/Dolphin-memory-engine/Source/GUI/MemWatcher/MemWatchModel.h
  /home/zach/Desktop/CIS472/final/Dolphin-memory-engine/Source/GUI/MemWatcher/MemWatchWidget.cpp
  /home/zach/Desktop/CIS472/final/Dolphin-memory-engine/Source/GUI/MemWatcher/MemWatchWidget.h
+ /home/zach/Desktop/CIS472/final/Dolphin-memory-engine/Source/GUI/MemWatcher/MemwatchConsole.h
  /home/zach/Desktop/CIS472/final/Dolphin-memory-engine/Source/MemoryWatch/MemWatchEntry.h
  /home/zach/Desktop/CIS472/final/Dolphin-memory-engine/Source/MemoryWatch/MemWatchTreeNode.h
  /usr/include/qt/QtCore/QAbstractItemModel
@@ -2394,6 +2399,7 @@ CMakeFiles/Dolphin-memory-engine.dir/main.cpp.o
  /home/zach/Desktop/CIS472/final/Dolphin-memory-engine/Source/GUI/MemWatcher/MemWatchDelegate.h
  /home/zach/Desktop/CIS472/final/Dolphin-memory-engine/Source/GUI/MemWatcher/MemWatchModel.h
  /home/zach/Desktop/CIS472/final/Dolphin-memory-engine/Source/GUI/MemWatcher/MemWatchWidget.h
+ /home/zach/Desktop/CIS472/final/Dolphin-memory-engine/Source/GUI/MemWatcher/MemwatchConsole.h
  /home/zach/Desktop/CIS472/final/Dolphin-memory-engine/Source/MemoryScanner/MemoryScanner.h
  /home/zach/Desktop/CIS472/final/Dolphin-memory-engine/Source/MemoryWatch/MemWatchEntry.h
  /home/zach/Desktop/CIS472/final/Dolphin-memory-engine/Source/MemoryWatch/MemWatchTreeNode.h

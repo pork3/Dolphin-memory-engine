@@ -91,6 +91,7 @@ CMakeFiles/Dolphin-memory-engine.dir/Dolphin-memory-engine_autogen/mocs_compilat
 CMakeFiles/Dolphin-memory-engine.dir/Dolphin-memory-engine_autogen/mocs_compilation.cpp.o: ../GUI/MemWatcher/MemWatchDelegate.h
 CMakeFiles/Dolphin-memory-engine.dir/Dolphin-memory-engine_autogen/mocs_compilation.cpp.o: ../GUI/MemWatcher/MemWatchModel.h
 CMakeFiles/Dolphin-memory-engine.dir/Dolphin-memory-engine_autogen/mocs_compilation.cpp.o: ../GUI/MemWatcher/MemWatchWidget.h
+CMakeFiles/Dolphin-memory-engine.dir/Dolphin-memory-engine_autogen/mocs_compilation.cpp.o: ../GUI/MemWatcher/MemwatchConsole.h
 CMakeFiles/Dolphin-memory-engine.dir/Dolphin-memory-engine_autogen/mocs_compilation.cpp.o: ../MemoryScanner/MemoryScanner.h
 CMakeFiles/Dolphin-memory-engine.dir/Dolphin-memory-engine_autogen/mocs_compilation.cpp.o: ../MemoryWatch/MemWatchEntry.h
 CMakeFiles/Dolphin-memory-engine.dir/Dolphin-memory-engine_autogen/mocs_compilation.cpp.o: ../MemoryWatch/MemWatchTreeNode.h
@@ -370,6 +371,7 @@ CMakeFiles/Dolphin-memory-engine.dir/GUI/MainWindow.cpp.o: ../GUI/MemViewer/MemV
 CMakeFiles/Dolphin-memory-engine.dir/GUI/MainWindow.cpp.o: ../GUI/MemWatcher/MemWatchDelegate.h
 CMakeFiles/Dolphin-memory-engine.dir/GUI/MainWindow.cpp.o: ../GUI/MemWatcher/MemWatchModel.h
 CMakeFiles/Dolphin-memory-engine.dir/GUI/MainWindow.cpp.o: ../GUI/MemWatcher/MemWatchWidget.h
+CMakeFiles/Dolphin-memory-engine.dir/GUI/MainWindow.cpp.o: ../GUI/MemWatcher/MemwatchConsole.h
 CMakeFiles/Dolphin-memory-engine.dir/GUI/MainWindow.cpp.o: ../GUI/Settings/DlgSettings.h
 CMakeFiles/Dolphin-memory-engine.dir/GUI/MainWindow.cpp.o: ../GUI/Settings/SConfig.h
 CMakeFiles/Dolphin-memory-engine.dir/GUI/MainWindow.cpp.o: ../MemoryScanner/MemoryScanner.h
@@ -1591,6 +1593,7 @@ CMakeFiles/Dolphin-memory-engine.dir/GUI/MemWatcher/MemWatchDelegate.cpp.o: ../G
 CMakeFiles/Dolphin-memory-engine.dir/GUI/MemWatcher/MemWatchDelegate.cpp.o: ../GUI/MemWatcher/MemWatchDelegate.cpp
 CMakeFiles/Dolphin-memory-engine.dir/GUI/MemWatcher/MemWatchDelegate.cpp.o: ../GUI/MemWatcher/MemWatchDelegate.h
 CMakeFiles/Dolphin-memory-engine.dir/GUI/MemWatcher/MemWatchDelegate.cpp.o: ../GUI/MemWatcher/MemWatchModel.h
+CMakeFiles/Dolphin-memory-engine.dir/GUI/MemWatcher/MemWatchDelegate.cpp.o: ../GUI/MemWatcher/MemwatchConsole.h
 CMakeFiles/Dolphin-memory-engine.dir/GUI/MemWatcher/MemWatchDelegate.cpp.o: ../MemoryWatch/MemWatchEntry.h
 CMakeFiles/Dolphin-memory-engine.dir/GUI/MemWatcher/MemWatchDelegate.cpp.o: ../MemoryWatch/MemWatchTreeNode.h
 CMakeFiles/Dolphin-memory-engine.dir/GUI/MemWatcher/MemWatchDelegate.cpp.o: /usr/include/qt/QtCore/QAbstractItemModel
@@ -1732,6 +1735,7 @@ CMakeFiles/Dolphin-memory-engine.dir/GUI/MemWatcher/MemWatchModel.cpp.o: ../Comm
 CMakeFiles/Dolphin-memory-engine.dir/GUI/MemWatcher/MemWatchModel.cpp.o: ../GUI/GUICommon.h
 CMakeFiles/Dolphin-memory-engine.dir/GUI/MemWatcher/MemWatchModel.cpp.o: ../GUI/MemWatcher/MemWatchModel.cpp
 CMakeFiles/Dolphin-memory-engine.dir/GUI/MemWatcher/MemWatchModel.cpp.o: ../GUI/MemWatcher/MemWatchModel.h
+CMakeFiles/Dolphin-memory-engine.dir/GUI/MemWatcher/MemWatchModel.cpp.o: ../GUI/MemWatcher/MemwatchConsole.h
 CMakeFiles/Dolphin-memory-engine.dir/GUI/MemWatcher/MemWatchModel.cpp.o: ../MemoryWatch/MemWatchEntry.h
 CMakeFiles/Dolphin-memory-engine.dir/GUI/MemWatcher/MemWatchModel.cpp.o: ../MemoryWatch/MemWatchTreeNode.h
 CMakeFiles/Dolphin-memory-engine.dir/GUI/MemWatcher/MemWatchModel.cpp.o: /usr/include/qt/QtCore/QAbstractItemModel
@@ -1825,6 +1829,7 @@ CMakeFiles/Dolphin-memory-engine.dir/GUI/MemWatcher/MemWatchWidget.cpp.o: ../GUI
 CMakeFiles/Dolphin-memory-engine.dir/GUI/MemWatcher/MemWatchWidget.cpp.o: ../GUI/MemWatcher/MemWatchModel.h
 CMakeFiles/Dolphin-memory-engine.dir/GUI/MemWatcher/MemWatchWidget.cpp.o: ../GUI/MemWatcher/MemWatchWidget.cpp
 CMakeFiles/Dolphin-memory-engine.dir/GUI/MemWatcher/MemWatchWidget.cpp.o: ../GUI/MemWatcher/MemWatchWidget.h
+CMakeFiles/Dolphin-memory-engine.dir/GUI/MemWatcher/MemWatchWidget.cpp.o: ../GUI/MemWatcher/MemwatchConsole.h
 CMakeFiles/Dolphin-memory-engine.dir/GUI/MemWatcher/MemWatchWidget.cpp.o: ../MemoryWatch/MemWatchEntry.h
 CMakeFiles/Dolphin-memory-engine.dir/GUI/MemWatcher/MemWatchWidget.cpp.o: ../MemoryWatch/MemWatchTreeNode.h
 CMakeFiles/Dolphin-memory-engine.dir/GUI/MemWatcher/MemWatchWidget.cpp.o: /usr/include/qt/QtCore/QAbstractItemModel
@@ -2393,6 +2398,7 @@ CMakeFiles/Dolphin-memory-engine.dir/main.cpp.o: ../GUI/MemViewer/MemViewerWidge
 CMakeFiles/Dolphin-memory-engine.dir/main.cpp.o: ../GUI/MemWatcher/MemWatchDelegate.h
 CMakeFiles/Dolphin-memory-engine.dir/main.cpp.o: ../GUI/MemWatcher/MemWatchModel.h
 CMakeFiles/Dolphin-memory-engine.dir/main.cpp.o: ../GUI/MemWatcher/MemWatchWidget.h
+CMakeFiles/Dolphin-memory-engine.dir/main.cpp.o: ../GUI/MemWatcher/MemwatchConsole.h
 CMakeFiles/Dolphin-memory-engine.dir/main.cpp.o: ../MemoryScanner/MemoryScanner.h
 CMakeFiles/Dolphin-memory-engine.dir/main.cpp.o: ../MemoryWatch/MemWatchEntry.h
 CMakeFiles/Dolphin-memory-engine.dir/main.cpp.o: ../MemoryWatch/MemWatchTreeNode.h
