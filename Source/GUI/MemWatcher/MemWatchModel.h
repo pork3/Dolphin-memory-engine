@@ -1,11 +1,12 @@
-#pragma once
-
+#ifndef _MEMWATCHMODEL_H
+#define _MEMWATCHMODEL_H
 #include <QAbstractItemModel>
 #include <QFile>
 #include <QJsonObject>
-
+#include "../MemWatcher/MemwatchConsole.h"
 #include "../../MemoryWatch/MemWatchEntry.h"
 #include "../../MemoryWatch/MemWatchTreeNode.h"
+#include "MemwatchConsole.h"
 
 class MemWatchModel : public QAbstractItemModel
 {
@@ -72,6 +73,7 @@ signals:
   void dropSucceeded();
 
 private:
+    MemwatchConsole* console;
   bool updateNodeValueRecursive(MemWatchTreeNode* node, const QModelIndex& parent = QModelIndex(),
                                 const bool readSucess = true);
   bool freezeNodeValueRecursive(MemWatchTreeNode* node, const QModelIndex& parent = QModelIndex(),
@@ -82,3 +84,5 @@ private:
 
   MemWatchTreeNode* m_rootNode;
 };
+
+#endif

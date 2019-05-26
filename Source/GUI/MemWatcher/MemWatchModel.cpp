@@ -11,6 +11,7 @@
 
 MemWatchModel::MemWatchModel(QObject* parent) : QAbstractItemModel(parent)
 {
+    this->console = new MemwatchConsole();
   m_rootNode = new MemWatchTreeNode(nullptr);
 }
 
@@ -208,11 +209,8 @@ QVariant MemWatchModel::data(const QModelIndex& index, int role) const
       {
 
           /*FOUND IT */
-
-          std::string name = entry->getLabel().toStdString();
-          std::string value = entry->getStringFromMemory();
-            std::cout << name << " " << value << std::endl;
-          //printf("%s: %s\n", name.,value);
+        //change console to two strings
+        console->PrintFormatL(entry->getLabel().toStdString(), entry->getStringFromMemory());
         return QString::fromStdString(entry->getStringFromMemory());
       }
       }
@@ -250,7 +248,8 @@ bool MemWatchModel::setData(const QModelIndex& index, const QVariant& value, int
       {
       case WATCH_COL_LABEL:
       {
-        entry->setLabel(value.toString());
+          //////fjdklajflkdjflkdalfkjdf
+
         emit dataChanged(index, index);
         return true;
       }
